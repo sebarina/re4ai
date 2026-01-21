@@ -1,6 +1,13 @@
 'use client';
 
-import { SelectHTMLAttributes, forwardRef, useState, useRef, useEffect } from 'react';
+import {
+  SelectHTMLAttributes,
+  forwardRef,
+  useState,
+  useRef,
+  useEffect,
+  useImperativeHandle,
+} from 'react';
 
 type SelectSize = 'large' | 'medium' | 'small';
 
@@ -9,23 +16,11 @@ interface SelectOption {
   label: string;
 }
 
-interface SelectProps extends Omit<SelectHTMLAttributes<HTMLSelectElement>, 'size' | 'children'> {
-  /**
-   * 选择框尺寸
-   * @default 'medium'
-   */
+interface SelectProps
+  extends Omit<SelectHTMLAttributes<HTMLSelectElement>, 'size' | 'children'> {
   size?: SelectSize;
-  /**
-   * 选项列表
-   */
   options: SelectOption[];
-  /**
-   * 标签文字
-   */
   label?: string;
-  /**
-   * 占位符文字
-   */
   placeholder?: string;
 }
 
@@ -51,10 +46,12 @@ export const Select = forwardRef<HTMLSelectElement, SelectProps>(
   ) => {
     const [isOpen, setIsOpen] = useState(false);
     const [isFocused, setIsFocused] = useState(false);
+
     const selectRef = useRef<HTMLSelectElement>(null);
     const wrapperRef = useRef<HTMLDivElement>(null);
 
-    const selectedOption = options.find((opt) => opt.value === value);
+    /** ⭐ 把内部 ref 安全地暴露给外部 */
+    useImperativeHandle(ref, () => selectRef.current!, []);
 
     useEffect(() => {
       const handleClickOutside = (event: MouseEvent) => {
@@ -98,14 +95,7 @@ export const Select = forwardRef<HTMLSelectElement, SelectProps>(
         )}
         <div ref={wrapperRef} className="relative">
           <select
-            ref={(node) => {
-              if (typeof ref === 'function') {
-                ref(node);
-              } else if (ref) {
-                ref.current = node;
-              }
-              selectRef.current = node;
-            }}
+            ref={selectRef} // ✅ 只绑定内部 ref
             className={selectClasses}
             disabled={disabled}
             onFocus={() => {
@@ -131,6 +121,7 @@ export const Select = forwardRef<HTMLSelectElement, SelectProps>(
               </option>
             ))}
           </select>
+
           {/* 自定义下拉箭头 */}
           <div className="absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none">
             <svg
