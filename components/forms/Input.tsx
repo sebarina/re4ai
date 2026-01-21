@@ -5,7 +5,7 @@ import { InputHTMLAttributes, forwardRef, useState } from 'react';
 type InputSize = 'large' | 'medium' | 'small';
 type InputState = 'default' | 'error' | 'success';
 
-interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
+interface InputProps extends Omit<InputHTMLAttributes<HTMLInputElement>, 'size'> {
   /**
    * 输入框尺寸
    * @default 'medium'
