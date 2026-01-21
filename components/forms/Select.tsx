@@ -9,7 +9,7 @@ interface SelectOption {
   label: string;
 }
 
-interface SelectProps extends Omit<SelectHTMLAttributes<HTMLSelectElement>, 'children'> {
+interface SelectProps extends Omit<SelectHTMLAttributes<HTMLSelectElement>, 'size' | 'children'> {
   /**
    * 选择框尺寸
    * @default 'medium'

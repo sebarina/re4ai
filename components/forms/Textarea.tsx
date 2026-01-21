@@ -5,7 +5,7 @@ import { TextareaHTMLAttributes, forwardRef, useState } from 'react';
 type TextareaSize = 'large' | 'medium' | 'small';
 type TextareaState = 'default' | 'error' | 'success';
 
-interface TextareaProps extends TextareaHTMLAttributes<HTMLTextAreaElement> {
+interface TextareaProps extends Omit<TextareaHTMLAttributes<HTMLTextAreaElement>,'size'> {
   /**
    * 文本域尺寸
    * @default 'medium'
