@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* 主色调 */
+  --lavender-purple: #BBA9FF;
+  --light-blue: #7BB8FF;
+  --deep-navy: #050F2A;
+  /* 辅助色 */
+  --bright-white: #F2FDFF;
+  
+  /* 文字颜色 */
+  --text-on-light: #050F2A; /* Deep Navy Blue on light backgrounds */
+  --text-on-dark: #F2FDFF; /* Bright White on dark backgrounds */
+  --text-on-dark-alt: #BBA9FF; /* Lavender Purple on dark backgrounds */
+  
+  /* 背景颜色 */
+  --bg-light: #F2FDFF; /* Bright White for light mode */
+  --bg-dark: #050F2A; /* Deep Navy Blue for dark mode */
+  --bg-dark-alt: #7BB8FF; /* Light Blue for dark mode alternative */
+  
+  /* 旧变量（保持兼容性） */
+  --foreground-rgb: 5, 15, 42;
+  --background-start-rgb: 242, 253, 255;
+  --background-end-rgb: 242, 253, 255;
+}
+
+body {
+  color: var(--text-on-light);
+  background-color: var(--bg-light);
+  min-height: 100vh;
+}
