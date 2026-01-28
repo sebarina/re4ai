@@ -1,8 +1,13 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: '案例 - RE4AI',
-  description: '成功的企业AI应用案例和经验分享',
+  title: '案例',
+  description:
+    'Re4.ai成功的企业AI应用案例和经验分享。了解我们如何帮助不同行业的企业实现AI转型和业务增长。',
+  openGraph: {
+    title: '案例 - Re4.ai',
+    description: '成功的企业AI应用案例和经验分享',
+  },
 };
 
 export default function Cases() {

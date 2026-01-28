@@ -1,0 +1,100 @@
+# Re4.ai - LLM.txt
+
+## About
+Re4.ai (重新智能) is a professional AI consulting and optimization service provider focused on helping small and medium-sized enterprises (SMEs) implement and optimize generative AI solutions. We specialize in AI model evaluation, prompt engineering, AI maturity assessment, ROI calculation, and comprehensive AI solution design.
+
+## Website
+- URL: https://re4.ai
+- Language: Chinese (Simplified)
+- Locale: zh-CN
+
+## Services
+
+### 1. Strategic Consulting
+- AI maturity assessment: Comprehensive evaluation framework to identify current AI readiness stage
+- ROI calculation model: Quantify AI investment returns and balance costs with value
+- Enterprise AI implementation roadmap: Complete implementation path from strategy to execution
+
+### 2. Training Services
+- Dify Enterprise Generative AI Training: Master the Dify platform to quickly build enterprise-level AI applications
+- Enterprise n8n AI Workflow Guide: Automate AI workflows using the n8n platform
+- Prompt engineering workshops: Scenario-based prompt optimization training
+
+### 3. Model Evaluation
+We provide comprehensive AI model evaluation services for mainstream models including:
+- Nano Banana Pro (Google DeepMind)
+- Sora 2 (OpenAI)
+- FLUX.1 Kontext (Black Forest Labs)
+- SeeDANCE 1.5 Pro (ByteDance Seed)
+- Wan 2.5 (Alibaba Wanxiang)
+- Kling 2.6 Pro (Kuaishou Kling)
+
+### 4. Prompt Optimization
+- Structured prompt writing
+- Few-shot learning techniques
+- Chain-of-Thought (CoT) prompting
+
+## Key Pages
+
+### Homepage (/)
+Main landing page featuring:
+- Hero section with company introduction
+- Value propositions: Strategy & Implementation, Team Empowerment, Evaluation-based Decisions
+- Solution overview for different roles (Decision Makers, Business & Technical Teams)
+- Trust signals and team credentials
+- Call-to-action for consultation
+
+### Solutions (/solutions)
+Comprehensive AI solutions page with:
+- Services for enterprise decision makers: AI maturity assessment, ROI calculation, implementation roadmap
+- Training programs for business and technical teams: Dify and n8n training courses
+
+### Model Evaluation (/model-evaluation)
+AI model evaluation services page featuring:
+- Model selection support for 6 mainstream AI models
+- Prompt optimization services with before/after comparisons
+
+### About Us (/about)
+Company information including:
+- Mission and vision: "重新智能 - 重新定义人工智能" (Reintelligence - Redefining Artificial Intelligence)
+- Team members: Caroline (Global Ecosystem Operations Expert), Cartman (Cloud Computing & Model Platform Expert), Sebarina (AI Technology Expert)
+
+### Cases (/cases)
+Success stories and case studies from different industries:
+- Financial industry AI model optimization
+- Manufacturing intelligent quality inspection solutions
+- E-commerce platform recommendation system optimization
+
+### Industry Insights (/insights)
+Coming soon page for industry insights and trends
+
+## Core Values
+
+1. **Strategy & Implementation Balance**: Full-chain AI solution from maturity assessment to phased implementation roadmap
+2. **Team Empowerment**: Customized training programs to help teams master next-generation AI productivity tools
+3. **Evaluation-based Decisions**: Deep model evaluation, prompt optimization, and ROI calculation for informed technology choices
+
+## Team Expertise
+
+- 2000+ enterprises covered in ecosystem leadership
+- Millions of DAU product commercialization experience
+- Hundreds of millions of daily API calls on model platforms
+
+## Technology Stack
+
+- Framework: Next.js (App Router)
+- Language: TypeScript
+- Styling: Tailwind CSS
+- Deployment: Modern web standards
+
+## Contact
+
+For consultation inquiries, please use the contact form on the website.
+
+## Keywords
+
+AI model evaluation, AI optimization, Generative AI, AI solutions, AI consulting, AI implementation, Dify training, n8n training, Prompt engineering, AI maturity assessment, ROI calculation, Re4.ai, 重新智能
+
+## Content Focus
+
+Re4.ai focuses on helping SMEs bridge the gap between AI technology and practical business applications. We provide end-to-end services from strategic planning to hands-on implementation, ensuring that AI investments deliver clear business value.

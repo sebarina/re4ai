@@ -179,7 +179,7 @@ export default function Solutions() {
               <p className="text-xl text-deep-navy/70 mb-8">
                 系统化的AI技能培训体系
               </p>
-              <Button variant="primary" size="large" onClick={handleDownloadCourseOutline}>
+              <Button variant="primary" size="large" onClick={openModal}>
                 查看培训计划
               </Button>
             </div>

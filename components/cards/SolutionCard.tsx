@@ -9,7 +9,7 @@ interface SolutionCardProps {
   /**
    * 角色标签
    */
-  roleTag: string;
+  roleTag?: string;
   /**
    * 角色标签颜色变体
    * @default 'purple'
@@ -75,15 +75,17 @@ export default function SolutionCard({
             </div>
             {/* 核心挑战和解决方案摘要 */}
             <h3 className="text-2xl font-bold text-bright-white leading-tight">
-              {challenge}
-              <span className="text-2xl font-bold text-bright-white ml-2">{solution}</span>
+              <span className="block">{challenge}</span>
+              <span className="block mt-1">{solution}</span>
             </h3>
           </div>
-          <span
-            className={`px-4 py-1.5 rounded-full text-sm font-medium ${tagBgClass} border border-current/20 flex-shrink-0`}
-          >
-            {roleTag}
-          </span>
+          {roleTag && (
+            <span
+              className={`px-4 py-1.5 rounded-full text-sm font-medium ${tagBgClass} border border-current/20 flex-shrink-0`}
+            >
+              {roleTag}
+            </span>
+          )}
         </div>
       </div>
 

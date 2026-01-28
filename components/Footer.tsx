@@ -12,12 +12,12 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* 公司信息 */}
           <div className="col-span-1 md:col-span-2">
-            <h3 className="text-bright-white text-xl font-bold mb-4">RE4AI</h3>
+            <h3 className="text-bright-white text-xl font-bold mb-4">Re4.ai</h3>
             <p className="text-bright-white/80 mb-4 max-w-md">
               专注于AI模型评测与优化，为企业提供专业的AI解决方案和行业洞察
             </p>
             <p className="text-sm text-bright-white/60">
-              © {new Date().getFullYear()} RE4AI. All rights reserved.
+              © {new Date().getFullYear()} Re4.ai. All rights reserved.
             </p>
           </div>
 
